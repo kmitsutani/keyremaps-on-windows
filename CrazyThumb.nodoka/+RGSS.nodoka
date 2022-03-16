@@ -1,0 +1,12 @@
+window RPGTKR /Game\.exe/ : Global
+
+key A = LeftShift
+mod Shift += A
+key S = Space
+key S-Space = Space
+key D = X
+key F = LeftControl
+key *S-*J = *S-*«
+key *S-*K = *S-*ª
+key *S-*H = *S-*©
+key *S-*L = *S-*¨

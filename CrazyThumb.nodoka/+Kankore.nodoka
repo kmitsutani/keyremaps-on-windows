@@ -1,0 +1,20 @@
+# CLASS:	C:\Program Files (x86)\Google\Chrome\Application\chrome.exe:Chrome_WidgetWin_1:Chrome_RenderWidgetHostHWND
+# TITLE:	C:\Program Files (x86)\Google\Chrome\Application\chrome.exe:ŠÍ‘à‚±‚ê‚­‚µ‚å‚ñ -ŠÍ‚±‚ê- - ƒIƒ“ƒ‰ƒCƒ“ƒQ[ƒ€ - DMM GAMES:Chrome Legacy Window
+
+window Kankore (/Chrome_Widget/ && /ŠÍ‚±‚ê/)
+
+def option mouse-event = true
+mod Control = !A
+
+key H = &MouseMove(-10, 0)
+key J = &MouseMove(0, 10)
+key K = &MouseMove(0,-10)
+key L = &MouseMove(10,0)
+
+key C-H = &MouseMove(-35,  0)
+key C-J = &MouseMove(  0, 35)
+key C-K = &MouseMove(  0,-35)
+key C-L = &MouseMove( 35,  0)
+
+key *F = *LButton
+

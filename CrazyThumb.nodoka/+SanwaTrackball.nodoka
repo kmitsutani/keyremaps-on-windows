@@ -1,0 +1,6 @@
+
+def option mouse-event = true
+
+key XButton2 = RButton
+key XButton1 = &Ignore
+key RButton = &Ignore

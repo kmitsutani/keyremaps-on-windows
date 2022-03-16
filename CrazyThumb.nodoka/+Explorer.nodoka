@@ -1,0 +1,4 @@
+# Explorer
+window explorer /Explorer\.EXE/ : Global
+
+key S-F = S-F10

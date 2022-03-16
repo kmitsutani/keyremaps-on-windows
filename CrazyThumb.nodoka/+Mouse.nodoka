@@ -1,0 +1,16 @@
+def option mouse-event = true
+
+mod M2 += J
+key M2-Space = LButton
+key M2-K = RButton
+
+key M0-C-H = TiltLeft
+key M0-C-L = TiltRight
+key M0-C-K = WheelForward
+key M0-C-J = WheelBackward
+
+key M0-LButton = LButton
+key M1-LButton = RButton
+
+key A-K = RButton
+key C-D = LButton

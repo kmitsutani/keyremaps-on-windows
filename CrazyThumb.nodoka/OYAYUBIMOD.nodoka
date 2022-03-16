@@ -1,0 +1,55 @@
+include "_keydef_109_with_Nanikore.nodoka"
+include "_keydef_104on109_thumbNanikore.nodoka"
+
+# Shift + Space -> ”¼Šp/‘SŠp
+#key S-Space = ”¼Šp/‘SŠp
+
+# LeftControl <-> ‰p”
+mod control -= LeftControl
+key *LeftControl = *‰p”
+
+def subst *‰p” = *‰p” # from http://d.hatena.ne.jp/kaosf/20101120
+mod control += ‰p”
+key *‰p” = *LeftControl
+
+# ‚Ğ‚ç‚ª‚È <-> RightControl
+mod control += ‚Ğ‚ç‚ª‚È
+key *‚Ğ‚ç‚ª‚È = *RightControl
+
+# Modifierize MUHENKAN/HENKAN
+mod M0 += !!–³•ÏŠ·
+mod M1 += !!•ÏŠ·
+# key M0-–³•ÏŠ· = –³•ÏŠ·
+# key M1-•ÏŠ· = •ÏŠ·
+
+
+# Draw Enter/Escape/BS
+key M0-*Space = *Enter
+key M1-*Space = Escape
+key M1-*H = BackSpace
+
+# vim-like move (HJKL)
+key M0-*S-*H = *S-*©
+key M0-*S-*J = *S-*«
+key M0-*S-*K = *S-*ª
+key M0-*S-*L = *S-*¨
+
+# draw Remote keys
+key M0-*I = *LeftSquareBracket
+key M0-*O = *RightSquareBracket
+key M0-*P = *YenSign
+key ~S-M1-*J = *HyphenMinus
+key S-M1-*J = *$LOW_LINE@
+key ~S-M1-*K = *$EQUALS_SIGN
+key S-M1-*K = *$PLUS_SIGN
+
+# Other util mappings
+key M1-A = Applications
+key M1-T = Tab
+
+include '+RGSS.nodoka'
+include '+Explorer.nodoka'
+include '+WinHotkeys.nodoka'
+include '+Mouse.nodoka'
+include '+Kankore.nodoka'
+#include '+SanwaTrackball.nodoka'
