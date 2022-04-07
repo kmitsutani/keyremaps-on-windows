@@ -1,0 +1,7 @@
+window Evernote /Evernote\.exe:/ : Global
+  key C-Space = &Toggle(L0)
+  key L0-M = A-S-M
+  key L0-T = A-C-T
+  key L0-D = Delete
+  key L0-J = «
+  key L0-K = ª
