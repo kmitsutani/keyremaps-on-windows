@@ -17,10 +17,13 @@ mod control += ‚Ð‚ç‚ª‚È
 key *‚Ð‚ç‚ª‚È = *RightControl
 
 # Modifierize MUHENKAN/HENKAN
-mod M0 += !!–³•ÏŠ·
-mod M1 += !!•ÏŠ·
-# key M0-–³•ÏŠ· = –³•ÏŠ·
-# key M1-•ÏŠ· = •ÏŠ·
+mod M0 += –³•ÏŠ·
+mod M1 += •ÏŠ·
+
+key ~M1-*–³•ÏŠ· = &Ignore
+key M1-D-–³•ÏŠ· = –³•ÏŠ·
+key M0-D-•ÏŠ· = •ÏŠ·
+key ~M0-*•ÏŠ· = &Ignore
 
 
 # Draw Enter/Escape/BS
@@ -47,9 +50,10 @@ key S-M1-*K = *$PLUS_SIGN
 key M1-A = Applications
 key M1-T = Tab
 
+key C-T = W-T
+
 include '+RGSS.nodoka'
 include '+Explorer.nodoka'
 include '+WinHotkeys.nodoka'
-include '+Mouse.nodoka'
-include '+Kankore.nodoka'
-#include '+SanwaTrackball.nodoka'
+include '+Evernote.nodoka'
+#include '+Mouse.nodoka'
