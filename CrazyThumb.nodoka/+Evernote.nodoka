@@ -5,3 +5,4 @@ window Evernote /Evernote\.exe:/ : Global
   key L0-D = Delete
   key L0-J = «
   key L0-K = ª
+  key Semicolon = S-F10
