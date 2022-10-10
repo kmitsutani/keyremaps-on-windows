@@ -1,6 +1,8 @@
+
+keymap Global
+
 include "_keydef_109_with_Nanikore.nodoka"
 include "_keydef_104on109_thumbNanikore.nodoka"
-
 # Shift + Space -> ”¼Šp/‘SŠp
 #key S-Space = ”¼Šp/‘SŠp
 
@@ -50,10 +52,12 @@ key S-M1-*K = *$PLUS_SIGN
 key M1-A = Applications
 key M1-T = Tab
 
-key C-T = W-T
+# key C-T = W-T
 
 include '+RGSS.nodoka'
 include '+Explorer.nodoka'
 include '+WinHotkeys.nodoka'
 include '+Evernote.nodoka'
 #include '+Mouse.nodoka'
+
+window RDP /mstsc\.exe/
