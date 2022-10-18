@@ -1,0 +1,50 @@
+# Shift + Space -> 半角/全角
+#key S-Space = 半角/全角
+
+# LeftControl <-> 英数
+mod control -= LeftControl
+key *LeftControl = *英数
+
+def subst *英数 = *英数 # from http://d.hatena.ne.jp/kaosf/20101120
+mod control += 英数
+key *英数 = *LeftControl
+
+# ひらがな <-> RightControl
+mod control += ひらがな
+key *ひらがな = *RightControl
+
+# Modifierize MUHENKAN/HENKAN
+mod M0 += 無変換
+mod M1 += 変換
+
+key ~M1-*無変換 = &Ignore
+key M1-D-無変換 = 無変換
+key M0-D-変換 = 変換
+key ~M0-*変換 = &Ignore
+
+
+# Draw Enter/Escape/BS
+key M0-*Space = *Enter
+key M1-*Space = Escape
+key M1-*H = BackSpace
+
+# vim-like move (HJKL)
+key M0-*S-*H = *S-*←
+key M0-*S-*J = *S-*↓
+key M0-*S-*K = *S-*↑
+key M0-*S-*L = *S-*→
+
+# draw Remote keys
+key M0-*I = *LeftSquareBracket
+key M0-*O = *RightSquareBracket
+key M0-*P = *YenSign
+key ~S-M1-*J = *HyphenMinus
+key S-M1-*J = *$LOW_LINE　
+key ~S-M1-*K = *$EQUALS_SIGN
+key S-M1-*K = *$PLUS_SIGN
+
+# Other util mappings
+key M1-A = Applications
+key M1-T = Tab
+
+# key C-T = W-T
