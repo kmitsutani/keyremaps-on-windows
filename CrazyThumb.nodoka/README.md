@@ -11,5 +11,5 @@ Main concepts of this configuration is as bellow:
 * Because of layout consistency of corresponding parenthesises adopt 104-US layout
   * Start with 109-JP layout and re-define 104-US layout on that ('104on109.nodoka')
 
-We can implement the almost same key re-mapping by XKB or Karabiner(except macOS, as of now) in above strategy.
+We can implement almost the same key re-mapping by XKB or Karabiner(except macOS, as of now) in above strategy.
 The environment dependency of the keymapping provided by this storategy is not so high.
