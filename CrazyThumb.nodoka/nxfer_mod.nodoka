@@ -42,6 +42,8 @@ key ~S-M1-*J = *HyphenMinus
 key S-M1-*J = *$LOW_LINE　
 key ~S-M1-*K = *$EQUALS_SIGN
 key S-M1-*K = *$PLUS_SIGN
+key M0-*Tab = *$GRAVE_ACCENT
+key M1-*Tab = *$TILDE
 
 # Other util mappings
 key M1-A = Applications
